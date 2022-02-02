@@ -11,7 +11,7 @@
 
 - 🤝 I’m looking for help with **Kubernetes**
 
-- 💬 Ask me about **Docker, AWS and Kubernetes**
+- 💬 Ask me about **AWS,  Docker and Kubernetes**
 
 - 📫 How to reach me **niltonh69@gmail.com**
 
