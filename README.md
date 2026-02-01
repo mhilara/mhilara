@@ -1,82 +1,163 @@
 ```
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                                                                              │
-│   Milton Hilara                                                              │
-│   AI Infrastructure Architect · GitOps Engineer · La Paz, Bolivia            │
-│                                                                              │
-└──────────────────────────────────────────────────────────────────────────────┘
+                    ╔═══════════════════════════════════════════════════════════════╗
+                    ║                                                               ║
+                    ║   ███╗   ███╗██╗██╗  ████████╗ ██████╗ ███╗   ██╗            ║
+                    ║   ████╗ ████║██║██║  ╚══██╔══╝██╔═══██╗████╗  ██║            ║
+                    ║   ██╔████╔██║██║██║     ██║   ██║   ██║██╔██╗ ██║            ║
+                    ║   ██║╚██╔╝██║██║██║     ██║   ██║   ██║██║╚██╗██║            ║
+                    ║   ██║ ╚═╝ ██║██║███████╗██║   ╚██████╔╝██║ ╚████║            ║
+                    ║   ╚═╝     ╚═╝╚═╝╚══════╝╚═╝    ╚═════╝ ╚═╝  ╚═══╝            ║
+                    ║                                                               ║
+                    ║           AI Infrastructure Architect · GitOps Engineer       ║
+                    ║                        La Paz, Bolivia                        ║
+                    ║                                                               ║
+                    ╚═══════════════════════════════════════════════════════════════╝
 ```
 
-```bash
-$ whoami
-```
-I build **AI-native infrastructure** for enterprises. Not just using AI — designing complete ecosystems where companies are managed and powered by artificial intelligence. Kubernetes, GitOps, LLMs at scale.
+<br>
 
-```bash
-$ cat /etc/skills/cloud-platforms
 ```
-```
-AWS EKS        ████████████████████  production
-Azure AKS      ████████████████████  production  
-Google GKE     ████████████████░░░░  learning
-Hetzner        ████████████████████  production
-On-Premise     ████████████████████  production
-```
-
-```bash
-$ cat /etc/skills/ai-ecosystem
-```
-```
-Models          OpenAI · Claude · Gemini
-Vector DB       Qdrant · Embeddings · Semantic Search
-Inference       KServe · vLLM · GPU Clusters
-Integration     MCP Protocol · LiteLLM Proxy · AI Agents
-Implementation  RAG · Fine-tuning · Model Serving
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                     │
+│    "Building AI-native infrastructure where enterprises are managed,               │
+│     administered, and powered by artificial intelligence."                          │
+│                                                                                     │
+│         ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐                         │
+│         │  ◉◉  │ ───► │  ◉◉  │ ───► │  ◉◉  │ ───► │  ◉◉  │    Neural Pipeline     │
+│         │  ◉◉  │      │  ◉◉  │      │  ◉◉  │      │  ◉◉  │                         │
+│         └──────┘      └──────┘      └──────┘      └──────┘                         │
+│           RAG      ──►  LLM     ──►  Agent   ──►  Deploy                           │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-```bash
-$ tree ~/gitops --dirsfirst
+<br>
+
+## `> ssh cloud@milton.infra`
+
 ```
-```
-gitops/
-├── ai/
-│   ├── kserve/           # model serving
-│   ├── models/           # llm deployments
-│   └── vector-db/        # qdrant & embeddings
-├── apps/
-│   ├── services/         # microservices + hpa/keda
-│   ├── web/              # frontends
-│   └── workers/          # background jobs
-├── platform/
-│   ├── traefik/          # ingress
-│   ├── prometheus/       # monitoring
-│   ├── grafana/          # dashboards
-│   └── keycloak/         # sso & rbac
-└── cluster/
-    └── ansible/          # provisioning
+┌─ MULTI-CLOUD KUBERNETES ─────────────────────────────────────────────────────────────┐
+│                                                                                      │
+│  AWS EKS      [##################################################] 100%  PRODUCTION │
+│  Azure AKS    [##################################################] 100%  PRODUCTION │
+│  Google GKE   [########################################··········]  80%  ADVANCED   │
+│  Hetzner      [##################################################] 100%  PRODUCTION │
+│  Bare Metal   [##################################################] 100%  PRODUCTION │
+│                                                                                      │
+│  Status: 47 clusters managed · 2,400+ pods orchestrated · 99.99% uptime             │
+│                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-```bash
-$ cat /etc/skills/stack
+<br>
+
+## `> cat /proc/ai/capabilities`
+
 ```
-```
-Platform        Kubernetes · ArgoCD · Helm · Terraform · Ansible
-Observability   Prometheus · Grafana · Loki
-Security        Keycloak · Sealed Secrets · External Secrets · RBAC
-Data            PostgreSQL · Redis · Kafka · MongoDB · MySQL
-CI/CD           GitHub Actions · Azure DevOps · Jenkins
-OS              RHEL · Ubuntu · Debian
+┌─ AI & LLM ECOSYSTEM ─────────────────────────────────────────────────────────────────┐
+│                                                                                      │
+│  ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐                  │
+│  │   LLM MODELS    │    │   VECTOR STACK  │    │   INFERENCE     │                  │
+│  ├─────────────────┤    ├─────────────────┤    ├─────────────────┤                  │
+│  │ ○ OpenAI GPT    │    │ ○ Qdrant        │    │ ○ KServe        │                  │
+│  │ ○ Claude        │    │ ○ Embeddings    │    │ ○ vLLM          │                  │
+│  │ ○ Gemini        │    │ ○ Semantic Srch │    │ ○ GPU Clusters  │                  │
+│  │ ○ Local LLMs    │    │ ○ RAG Pipeline  │    │ ○ NVIDIA Ops    │                  │
+│  └─────────────────┘    └─────────────────┘    └─────────────────┘                  │
+│                                                                                      │
+│  ┌─────────────────┐    ┌─────────────────┐                                         │
+│  │   INTEGRATION   │    │   AUTOMATION    │                                         │
+│  ├─────────────────┤    ├─────────────────┤                                         │
+│  │ ○ MCP Protocol  │    │ ○ AI Agents     │                                         │
+│  │ ○ LiteLLM Proxy │    │ ○ Fine-tuning   │                                         │
+│  │ ○ API Gateway   │    │ ○ Model Serving │                                         │
+│  └─────────────────┘    └─────────────────┘                                         │
+│                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-```bash
-$ cat ~/.contact
+<br>
+
+## `> tree ~/gitops --architecture`
+
 ```
-```
-email       milton.hilara@gmail.com
-linkedin    linkedin.com/in/miltonhilara
-github      github.com/mhilara
+┌─ GITOPS ARCHITECTURE ────────────────────────────────────────────────────────────────┐
+│                                                                                      │
+│                            ┌───────────────┐                                         │
+│                            │     Git       │                                         │
+│                            │   (Source)    │                                         │
+│                            └───────┬───────┘                                         │
+│                                    │                                                 │
+│                                    ▼                                                 │
+│                            ┌───────────────┐                                         │
+│                            │    ArgoCD     │                                         │
+│                            │  (Reconcile)  │                                         │
+│                            └───────┬───────┘                                         │
+│                                    │                                                 │
+│          ┌─────────────┬──────────┼──────────┬─────────────┐                        │
+│          ▼             ▼          ▼          ▼             ▼                        │
+│    ┌──────────┐  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐               │
+│    │    ai/   │  │  apps/   │ │platform/ │ │ cluster/ │ │ secrets/ │               │
+│    ├──────────┤  ├──────────┤ ├──────────┤ ├──────────┤ ├──────────┤               │
+│    │ kserve   │  │ services │ │ traefik  │ │ ansible  │ │ sealed   │               │
+│    │ models   │  │ web      │ │ prometheus│ │ playbooks│ │ external │               │
+│    │ vector-db│  │ workers  │ │ keycloak │ │ roles    │ │ vault    │               │
+│    └──────────┘  └──────────┘ └──────────┘ └──────────┘ └──────────┘               │
+│                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
----
+<br>
 
-<sub>Available for consulting · AI infrastructure · GitOps architecture · Multi-cloud Kubernetes</sub>
+## `> systemctl status tech.stack`
+
+```
+┌─ TECH STACK ─────────────────────────────────────────────────────────────────────────┐
+│                                                                                      │
+│  ORCHESTRATION    Kubernetes · ArgoCD · Helm · Kustomize                             │
+│  ──────────────────────────────────────────────────────────────────────────────────  │
+│  INFRASTRUCTURE   Terraform · Ansible · Crossplane                                   │
+│  ──────────────────────────────────────────────────────────────────────────────────  │
+│  OBSERVABILITY    Prometheus · Grafana · Loki · Tempo · AlertManager                 │
+│  ──────────────────────────────────────────────────────────────────────────────────  │
+│  SECURITY         Keycloak · Sealed Secrets · External Secrets · RBAC · OPA          │
+│  ──────────────────────────────────────────────────────────────────────────────────  │
+│  DATA             PostgreSQL · Redis · Kafka · MongoDB · MySQL · Qdrant              │
+│  ──────────────────────────────────────────────────────────────────────────────────  │
+│  CI/CD            GitHub Actions · Azure DevOps · Jenkins · Tekton                   │
+│  ──────────────────────────────────────────────────────────────────────────────────  │
+│  SCALING          KEDA · HPA · VPA · Cluster Autoscaler                              │
+│  ──────────────────────────────────────────────────────────────────────────────────  │
+│  OS               RHEL · Ubuntu · Debian · Talos Linux                               │
+│                                                                                      │
+│  ● active (running) since 2018                                                       │
+│                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+<br>
+
+## `> ping milton`
+
+```
+┌─ CONTACT ────────────────────────────────────────────────────────────────────────────┐
+│                                                                                      │
+│  ENDPOINT              VALUE                              STATUS                     │
+│  ─────────────────────────────────────────────────────────────────────────────────── │
+│  email                 milton.hilara@gmail.com            ● online                   │
+│  linkedin              linkedin.com/in/miltonhilara       ● online                   │
+│  github                github.com/mhilara                 ● online                   │
+│                                                                                      │
+│  ─────────────────────────────────────────────────────────────────────────────────── │
+│  Available for: AI Infrastructure · GitOps · Multi-Cloud K8s · Consulting           │
+│                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+<br>
+
+```
+───────────────────────────────────────────────────────────────────────────────────────
+                     "Infrastructure as Code · GitOps as Culture"
+───────────────────────────────────────────────────────────────────────────────────────
+```
